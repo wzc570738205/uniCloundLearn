@@ -63,5 +63,15 @@
     },
     "mp-toutiao" : {
         "usingComponents" : true
+    },
+    "h5" : {
+        "router" : {
+            "base" : "./",
+            "mode" : "hash"
+        },
+        "devServer" : {
+            "https" : false
+        },
+        "title" : "uniClound教程"
     }
 }

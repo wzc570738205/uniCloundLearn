@@ -1,21 +1,95 @@
 {
-    "pages": [ //pages数组中第一项表示应用启动页,
-        {
-            "path": "pages/login/login",
-            "style": {}
-        }, {
-            "path": "pages/login/forget",
-            "style": {}
-        }, {
-            "path": "pages/login/register",
-            "style": {}
-        } 
-    ],
-    "globalStyle": {
-    	"navigationBarTextStyle": "black",
-    	"navigationBarTitleText": "登陆模板",
-    	"navigationBarBackgroundColor": "#F8F8F8",
-    	"backgroundColor": "#F8F8F8",
-    	"navigationStyle": "custom" //取消默认的原生导航栏
-    }
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页,
+		{
+			"path": "pages/login/login",
+			"style": {}
+		}, {
+			"path": "pages/login/forget",
+			"style": {}
+		}, {
+			"path": "pages/login/register",
+			"style": {}
+		}, {
+			"path": "pages/mallMenu/mallMenu",
+			"style": {
+				"navigationBarTitleText": "妙趣商城",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ddd",
+				"navigationBarTextStyle": "black",
+				"navigationStyle": "custom" // 
+			}
+
+		}, {
+			"path": "pages/addShop/addShop",
+			"style": {
+				"navigationBarTitleText": "商品添加",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ddd",
+				"navigationBarTextStyle": "black",
+				"navigationStyle": "custom" // 
+			}
+
+		}, {
+			"path": "pages/add/add",
+			"style": {
+				"navigationBarTitleText": "入库",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ddd",
+				"navigationBarTextStyle": "black",
+				"navigationStyle": "custom" // 
+			}
+
+		}, {
+			"path": "pages/addType/addType",
+			"style": {
+				"navigationBarTitleText": "分类添加",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ddd",
+				"navigationBarTextStyle": "black",
+				"navigationStyle": "custom" // 
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "登陆",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom" // 隐藏系统导航栏
+	},
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#303133",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/mallMenu/mallMenu",
+				"iconPath": "static/mall.png",
+				"selectedIconPath": "static/mall_select.png",
+				"text": "商城"
+			},
+			{
+				"pagePath": "pages/add/add",
+				"iconPath": "static/add.png",
+				"selectedIconPath": "static/add_select.png",
+				"text": "入库"
+			}
+			// {
+			// 	"pagePath": "pages/example/js",
+			// 	"iconPath": "static/uview/example/js.png",
+			// 	"selectedIconPath": "static/uview/example/js_select.png",
+			// 	"text": "工具"
+			// },
+			// {
+			// 	"pagePath": "pages/example/template",
+			// 	"iconPath": "static/uview/example/template.png",
+			// 	"selectedIconPath": "static/uview/example/template_select.png",
+			// 	"text": "我的"
+			// }
+		]
+	}
 }

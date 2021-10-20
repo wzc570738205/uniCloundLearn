@@ -17,9 +17,9 @@
 
 			<!-- 底部信息 -->
 			<view class="footer">
-				<text @tap="isShowAgree" class="cuIcon" :class="showAgree?'cuIcon-radiobox':'cuIcon-round'"> 同意</text>
-				<!-- 协议地址 -->
-				<navigator url="" open-type="navigate">《协议》</navigator>
+				<navigator url="login" open-type="navigate">已有账号，点击登录</navigator>
+				<!-- <text @tap="isShowAgree" class="cuIcon" :class="showAgree?'cuIcon-radiobox':'cuIcon-round'"> 同意</text>
+				<navigator url="" open-type="navigate">《协议》</navigator> -->
 			</view>
 		</view>
 	</view>
@@ -119,7 +119,7 @@
 					title: '注册中'
 				});
 				uni.request({
-					url: 'https://******.com/http/register',
+					url: 'https://**.com/http/register',
 					data: {
 						phoneData: this.phoneData,
 						passData: this.passData
